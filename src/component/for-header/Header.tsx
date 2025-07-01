@@ -6,7 +6,6 @@ import { useState } from "react";
 export default function Header() {
   const pathname = usePathname();
   const [openDropdown, setOpenDropdown] = useState(false);
-  console.log(openDropdown);
   return (
     <>
       <div className="flex justify-between bg-black text-white w-full lg:p-4 xl:p-4 2xl:p-4 2xl:pt-8">
@@ -52,7 +51,7 @@ export default function Header() {
                 Product
               </a>
               <a
-                href="/service"
+                href=""
                 className={`${
                   pathname === "/service" ? "text-blue-400" : "text-white"
                 } hover:text-blue-400`}
@@ -60,7 +59,7 @@ export default function Header() {
                 Service
               </a>
               <a
-                href="/ourbrand"
+                href=""
                 className={`${
                   pathname === "/ourbrand" ? "text-blue-400" : "text-white"
                 } hover:text-blue-400`}
@@ -109,7 +108,7 @@ export default function Header() {
             </li>
             <li>
               <a
-                href="/service"
+                href=""
                 className="hover:text-blue-500 hover:bg-gray-200 block w-full px-2 py-1 rounded"
               >
                 Service
@@ -117,7 +116,7 @@ export default function Header() {
             </li>
             <li>
               <a
-                href="/ourbrand"
+                href=""
                 className="hover:text-blue-800 hover:bg-gray-200 block w-full px-2 py-1 rounded whitespace-nowrap"
               >
                 Our Brand

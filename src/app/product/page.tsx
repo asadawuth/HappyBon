@@ -43,7 +43,7 @@ export default function page() {
           </div>
         </div>
 
-        <div className="relative w-full overflow-hidden px-2 sm:p-2 md:p-4 lg:p-4 xl:p-6 2xl:p-8">
+        <div className="relative w-full overflow-hidden p-2 sm:p-2 md:p-4 lg:p-4 xl:p-6 2xl:p-8">
           <img
             src="forproductpage/product2.png"
             alt="image"
@@ -65,6 +65,135 @@ export default function page() {
             <p className="text-sm sm:text-2xl font-light mt-1">
               A golden-baked roll filled with rich cheese, cured meats,and
               savory sauce
+            </p>
+          </div>
+        </div>
+
+        <div className="relative w-full flex px-2 sm:px-2 md:px-4 lg:px-4 xl:px-6 2xl:px-8">
+          {/* ซ้าย - รูปภาพ */}
+          <div className="w-2/3">
+            <img
+              src="forproductpage/product3.png"
+              alt="Pizza Twist"
+              className="w-full h-full object-cover"
+            />
+          </div>
+
+          {/* ขวา - กล่องพื้นหลัง */}
+          <div
+            className="w-1/3 bg-[#e2c79e] relative
+    pt-1 sm:pt-2 md:pt-8 lg:pt-8 xl:pt-32 2xl:pt-32
+    hover:hidden hover:sm:block"
+          >
+            {/* กรอบขาว */}
+            <div
+              className="absolute border-2 border-white
+      right-2 sm:right-12 md:right-16 lg:right-20 xl:right-40 2xl:right-48
+      w-[22vh] sm:w-[20vh] md:w-[28vh] lg:w-[30vh] xl:w-[40vh] 2xl:w-[50vh]
+      h-[29vh] sm:h-[32vh] md:h-[36vh] lg:h-[46vh] xl:h-[36vh] 2xl:h-[58vh]"
+            >
+              {/* กล่องดำด้านใน */}
+              <div
+                className="absolute bg-black/80 shadow-lg text-white
+        p-2 sm:p-3 md:p-4 lg:p-4 xl:p-6 2xl:p-6 flex flex-col
+        right-2 sm:right-4 md:right-3 lg:right-3 xl:right-6 2xl:right-4
+        top-1 sm:top-2 md:top-2 lg:top-3 xl:top-6 2xl:top-6
+        h-[29vh] sm:h-[30vh] md:h-[36vh] lg:h-[46vh] xl:h-[44vh] 2xl:h-[58vh]
+        w-full"
+              >
+                {/* Title */}
+                <div className="px-2 sm:px-3 md:px-4 lg:px-6 xl:px-12 2xl:px-4">
+                  <h5 className="font-serif text-start text-xs sm:text-lg md:text-2xl lg:text-3xl xl:text-6xl 2xl:text-8xl">
+                    Pizza
+                  </h5>
+                  <h5 className="font-serif text-end text-xs sm:text-lg md:text-2xl lg:text-3xl xl:text-6xl 2xl:text-8xl">
+                    Twist
+                  </h5>
+                </div>
+
+                {/* Description */}
+                <div
+                  className="mt-1 sm:mt-2 md:mt-2 lg:mt-2 xl:mt-4 2xl:mt-8 w-full max-w-md break-words 
+                text-[10px] sm:text-xs md:text-sm lg:text-sm xl:text-base 2xl:text-base 
+                px-2 sm:px-3 md:px-4 lg:px-6 xl:px-6 2xl:px-6"
+                >
+                  <p>A fun, hand-twisted pizza roll with</p>
+                  <p>melty cheese, savory fillings, and</p>
+                  <p>golden crust.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="w-full flex px-2 py-1 p-2 sm:p-2 md:p-4 lg:p-4 xl:p-6 2xl:p-8">
+          {/* ซ้าย */}
+          <div
+            className="w-1/3 flex flex-col bg-[#212D39] 
+          gap-8 2xl:gap-48 z-100
+          "
+          >
+            <div className="pr-2">
+              <img
+                src="forproductpage/product4.png"
+                alt="image"
+                className="w-full h-auto object-cover"
+              />
+            </div>
+            <div className="">
+              <h1
+                className="text-[#e2c79e] 2xl:text-5xl lg:text-5xl md:text-4xl sm:text-3xl text-xl
+              2xl:-rotate-[18deg] xl:-rotate-[18deg]
+              2xl:text-start xl:text-end lg:text-center md:text-center sm:text-center text-center
+              block 2xl:pl-52
+              "
+              >
+                Au the flavor.
+              </h1>
+              <h1
+                className="text-[#e2c79e] 2xl:text-5xl lg:text-5xl md:text-4xl sm:text-3xl text-2xl
+              2xl:-rotate-[18deg] xl:-rotate-[18deg] lg:-rotate-0
+              2xl:text-end xl:text-end lg:text-center md:text-center sm:text-center text-center 
+              "
+              >
+                we apped in one bitte
+              </h1>
+            </div>
+          </div>
+
+          {/* กลาง */}
+          <div className="w-1/3 h-auto z-100">
+            <img
+              src="forproductpage/product5.png"
+              alt="image"
+              className="w-full h-full  object-cover"
+            />
+          </div>
+
+          {/* ขวา - Calzone Box */}
+          <div
+            className="w-1/3 bg-[#212D39] p-6 
+          2xl:flex 2xl:flex-col 2xl:justify-center 2xl:items-center
+          xl:flex xl:flex-col xl:justify-center xl:items-center
+          md:flex md:flex-col md:justify-center md:items-center
+          2xl:gap-28 xl:gap-24 lg:gap-16 md:gap-8 z-100
+          "
+          >
+            <h1
+              className="text-[#e2c79e] text-sm sm:text-5xl font-serif 
+            2xl:text-8xl xl:text-6xl
+            "
+            >
+              Calzone
+            </h1>
+            <p className="text-white text-sm leading-relaxed text-start 2xl:text-2xl">
+              Calzone is an Italian oven–
+              {/* <br /> */}
+              baked turnover. A typical
+              {/* <br /> */}
+              calzone is made from salted
+              {/* <br /> */}
+              bread dough,
             </p>
           </div>
         </div>
