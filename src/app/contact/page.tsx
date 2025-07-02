@@ -276,7 +276,7 @@ export default function page() {
           <h3 className="text-sm font-semibold mb-2">Our Social Media</h3>
           <div className="flex gap-4 cursor-pointer">
             <Image
-              src="/forcontact/line.png"
+              src="/forcontact/line.Webp"
               alt="Line"
               width={32}
               height={32}
@@ -284,7 +284,7 @@ export default function page() {
             />
 
             <Image
-              src="/forcontact/facebook.png"
+              src="/forcontact/facebook.Webp"
               alt="Facebook"
               width={32}
               height={32}
@@ -292,7 +292,7 @@ export default function page() {
             />
 
             <Image
-              src="/forcontact/instagram.png"
+              src="/forcontact/instagram.Webp"
               alt="Instagram"
               width={32}
               height={32}
