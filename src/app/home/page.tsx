@@ -5,7 +5,7 @@ export default function Page() {
       <div className="relative w-full overflow-hidden">
         <img
           loading="lazy"
-          src="forhomepage/homeimage1.png"
+          src="forhomepage/homeimage1.Webp"
           alt="image"
           className="w-full"
         />
@@ -128,7 +128,7 @@ export default function Page() {
         <div className="w-2/3 h-auto">
           <img
             loading="lazy"
-            src="forhomepage/homeimage2.png"
+            src="forhomepage/homeimage2.Webp"
             alt="image"
             className="w-full h-full object-cover"
           />
@@ -146,7 +146,7 @@ export default function Page() {
           <div className="bg-[#f5e8d8] rounded-xl shadow-lg p-4 hover:scale-95">
             <img
               loading="lazy"
-              src="forhomepage/image1.png"
+              src="forhomepage/image1.Webp"
               alt="image1"
               className="w-96 h-auto object-contain cursor-pointer"
             />
@@ -154,7 +154,7 @@ export default function Page() {
           <div className="bg-[#f5e8d8] rounded-xl shadow-lg p-4 hover:scale-95">
             <img
               loading="lazy"
-              src="forhomepage/image2.png"
+              src="forhomepage/image2.Webp"
               alt="image2"
               className="w-96 h-auto object-contain cursor-pointer"
             />
@@ -162,7 +162,7 @@ export default function Page() {
           <div className="bg-[#f5e8d8] rounded-xl shadow-lg p-4 hover:scale-95">
             <img
               loading="lazy"
-              src="forhomepage/image3.png"
+              src="forhomepage/image3.Webp"
               alt="image3"
               className="w-96 h-auto object-contain cursor-pointer"
             />
@@ -175,7 +175,7 @@ export default function Page() {
         {/* Background Image */}
         <img
           loading="lazy"
-          src="forhomepage/bglasthome.png"
+          src="forhomepage/bglasthome.Webp"
           alt="background"
           className="w-full h-auto object-cover"
         />
@@ -223,7 +223,7 @@ export default function Page() {
                 >
                   <img
                     loading="lazy"
-                    src="forhomepage/logohome1.png"
+                    src="forhomepage/logohome1.Webp"
                     alt="Developed by R&D"
                     className="w-6 h-6 sm:w-6 sm:h-6 md:h-6 md:w-6 lg:w-10 lg:h-10 xl:h-10 xl:w-10 2xl:w-10 2xl:h-10"
                   />
@@ -245,7 +245,7 @@ export default function Page() {
                 "
                 >
                   <img
-                    src="forhomepage/logohome2.png"
+                    src="forhomepage/logohome2.Webp"
                     alt="Trial Production"
                     className="sm:w-6 sm:h-6 md:h-6 md:w-6 lg:w-10 lg:h-10 xl:h-10 xl:w-10 2xl:w-10 2xl:h-10"
                   />
@@ -267,7 +267,7 @@ export default function Page() {
                 "
                 >
                   <img
-                    src="forhomepage/logohome3.png"
+                    src="forhomepage/logohome3.Webp"
                     alt="Quality Assurance"
                     className="w-6 h-6 sm:w-6 sm:h-6 md:h-6 md:w-6 lg:w-10 lg:h-10 xl:h-10 xl:w-10 2xl:w-10 2xl:h-10"
                   />
@@ -289,7 +289,7 @@ export default function Page() {
                 "
                 >
                   <img
-                    src="forhomepage/logohome4.png"
+                    src="forhomepage/logohome4.Webp"
                     alt="Packaging"
                     className="w-6 h-6 sm:w-6 sm:h-6 md:h-6 md:w-6 lg:w-10 lg:h-10 xl:h-10 xl:w-10 2xl:w-10 2xl:h-10"
                   />
@@ -311,7 +311,7 @@ export default function Page() {
                 "
                 >
                   <img
-                    src="forhomepage/logohome5.png"
+                    src="forhomepage/logohome5.Webp"
                     alt="International Delivery"
                     className="w-6 h-6 sm:w-6 sm:h-6 md:h-6 md:w-6 lg:w-10 lg:h-10 xl:h-10 xl:w-10 2xl:w-10 2xl:h-10"
                   />
