@@ -90,7 +90,7 @@ export default function page() {
             {/* Hours */}
             <div className="flex flex-col items-center gap-2">
               <Image
-                src="/forcontact/logocontact4.webp"
+                src="/forcontact/logocontact4.Webp"
                 alt="hours"
                 width={48}
                 height={48}
