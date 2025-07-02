@@ -3,16 +3,19 @@ import dynamic from "next/dynamic";
 const LeafletMap = dynamic(() => import("../../component/LeafletMap"), {
   ssr: false,
 });
+import Image from "next/image";
 export default function page() {
   return (
     <div className="bg-[#212D39]">
       {/* layout1 */}
       <div className="w-full relative">
-        <img
-          src="forcontact/contact1.Webp"
-          alt="image"
+        <Image
+          src="/forcontact/contact1.webp"
+          alt="Contact"
+          width={1920}
+          height={1080} // ✅ 16:9 หรือใช้ขนาดของภาพจริง
           className="w-full h-auto object-cover"
-          loading="lazy"
+          priority // ✅ เพราะเป็นรูปด้านบนสุด
         />
         <div className="absolute inset-0 flex items-center justify-center">
           <h1 className="text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-7xl 2xl:text-9xl font-serif">
@@ -35,11 +38,13 @@ export default function page() {
           <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-8 text-center">
             {/* Location */}
             <div className="flex flex-col items-center gap-2">
-              <img
-                loading="lazy"
-                src="forcontact/logocontact1.Webp"
+              <Image
+                src="/forcontact/logocontact1.Webp"
                 alt="location"
-                className="w-12 h-12 object-contain"
+                width={48}
+                height={48}
+                className="object-contain"
+                loading="lazy"
               />
               <h1 className="font-semibold text-lg">Our Location</h1>
               <p className="text-sm text-center">
@@ -51,11 +56,13 @@ export default function page() {
 
             {/* Email */}
             <div className="flex flex-col items-center gap-2">
-              <img
-                loading="lazy"
-                src="forcontact/logocontact2.Webp"
+              <Image
+                src="/forcontact/logocontact2.Webp"
                 alt="email"
-                className="w-12 h-12 object-contain"
+                width={48}
+                height={48}
+                className="object-contain"
+                loading="lazy"
               />
               <h1 className="font-semibold text-lg">Our Email</h1>
               <p className="text-sm text-center">
@@ -68,11 +75,13 @@ export default function page() {
 
             {/* Phone */}
             <div className="flex flex-col items-center gap-2">
-              <img
-                loading="lazy"
-                src="forcontact/logocontact3.Webp"
+              <Image
+                src="/forcontact/logocontact3.Webp"
                 alt="phone"
-                className="w-12 h-12 object-contain"
+                width={48}
+                height={48}
+                className="object-contain"
+                loading="lazy"
               />
               <h1 className="font-semibold text-lg">Our Phone</h1>
               <p className="text-sm text-center">P : (+66) 626265629</p>
@@ -80,11 +89,13 @@ export default function page() {
 
             {/* Hours */}
             <div className="flex flex-col items-center gap-2">
-              <img
-                loading="lazy"
-                src="forcontact/logocontact4.Webp"
+              <Image
+                src="/forcontact/logocontact4.webp"
                 alt="hours"
-                className="w-12 h-12 object-contain"
+                width={48}
+                height={48}
+                className="object-contain"
+                loading="lazy"
               />
               <h1 className="font-semibold text-lg">Open Hours</h1>
               <p className="text-sm text-center">
@@ -160,18 +171,22 @@ export default function page() {
         {/* ซ้าย */}
         <div className="flex flex-col gap-2 w-full lg:w-1/3">
           <div className="flex-1">
-            <img
+            <Image
               loading="lazy"
-              src="forproductpage/product1.Webp"
+              src="/forproductpage/product1.Webp"
               alt="image"
+              width={800}
+              height={600}
               className="w-full h-full object-cover"
             />
           </div>
           <div className="flex-1">
-            <img
+            <Image
               loading="lazy"
-              src="forproductpage/product7.Webp"
+              src="/forproductpage/product7.Webp"
               alt="image"
+              width={800}
+              height={200}
               className="w-full h-full object-cover"
             />
           </div>
@@ -179,30 +194,36 @@ export default function page() {
         {/* กลาง */}
         <div className="w-full lg:w-1/3">
           <div className="h-full">
-            <img
-              loading="lazy"
-              src="forproductpage/product5.Webp"
+            <Image
+              src="/forproductpage/product5.webp"
               alt="image"
+              width={800}
+              height={800}
               className="w-full h-full object-cover"
+              loading="lazy"
             />
           </div>
         </div>
         {/* ขวา */}
         <div className="flex flex-col gap-2 w-full lg:w-1/3">
           <div className="flex-1">
-            <img
-              loading="lazy"
-              src="forproductpage/product6.Webp"
+            <Image
+              src="/forproductpage/product6.Webp"
               alt="image"
+              width={800}
+              height={800}
               className="w-full h-full object-cover"
+              loading="lazy"
             />
           </div>
           <div className="flex-1">
-            <img
-              loading="lazy"
-              src="forproductpage/product2.Webp"
+            <Image
+              src="/forproductpage/product2.Webp"
               alt="image"
+              width={800}
+              height={800}
               className="w-full h-full object-cover"
+              loading="lazy"
             />
           </div>
           <div className="flex-1">
@@ -252,22 +273,27 @@ export default function page() {
           <hr className="border-white my-4" />
           <h3 className="text-sm font-semibold mb-2">Our Social Media</h3>
           <div className="flex gap-4 cursor-pointer">
-            <img
-              loading="lazy"
-              src="forcontact/line.png"
+            <Image
+              src="/forcontact/line.png"
               alt="Line"
+              width={32}
+              height={32}
               className="w-8 h-8"
             />
-            <img
-              loading="lazy"
-              src="forcontact/facebook.png"
+
+            <Image
+              src="/forcontact/facebook.png"
               alt="Facebook"
+              width={32}
+              height={32}
               className="w-8 h-8 cursor-pointer"
             />
-            <img
-              loading="lazy"
-              src="forcontact/instagram.png"
+
+            <Image
+              src="/forcontact/instagram.png"
               alt="Instagram"
+              width={32}
+              height={32}
               className="w-8 h-8 cursor-pointer"
             />
           </div>
