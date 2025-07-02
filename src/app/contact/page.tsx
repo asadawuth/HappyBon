@@ -10,7 +10,7 @@ export default function page() {
       {/* layout1 */}
       <div className="w-full relative">
         <Image
-          src="/forcontact/contact1.webp"
+          src="/forcontact/contact1.Webp"
           alt="Contact"
           width={1920}
           height={1080} // ✅ 16:9 หรือใช้ขนาดของภาพจริง
@@ -195,7 +195,7 @@ export default function page() {
         <div className="w-full lg:w-1/3">
           <div className="h-full">
             <Image
-              src="/forproductpage/product5.webp"
+              src="/forproductpage/product5.Webp"
               alt="image"
               width={800}
               height={800}
@@ -227,10 +227,12 @@ export default function page() {
             />
           </div>
           <div className="flex-1">
-            <img
+            <Image
               loading="lazy"
-              src="forproductpage/product8.Webp"
               alt="image"
+              width={800}
+              height={800}
+              src="forproductpage/product8.Webp"
               className="w-full h-full object-cover"
             />
           </div>
