@@ -9,7 +9,7 @@ export default function page() {
       {/* layout1 */}
       <div className="w-full relative">
         <img
-          src="forcontact/contact1.png"
+          src="forcontact/contact1.Webp"
           alt="image"
           className="w-full h-auto object-cover"
           loading="lazy"
@@ -37,7 +37,7 @@ export default function page() {
             <div className="flex flex-col items-center gap-2">
               <img
                 loading="lazy"
-                src="forcontact/logocontact1.png"
+                src="forcontact/logocontact1.Webp"
                 alt="location"
                 className="w-12 h-12 object-contain"
               />
@@ -53,7 +53,7 @@ export default function page() {
             <div className="flex flex-col items-center gap-2">
               <img
                 loading="lazy"
-                src="forcontact/logocontact2.png"
+                src="forcontact/logocontact2.Webp"
                 alt="email"
                 className="w-12 h-12 object-contain"
               />
@@ -70,7 +70,7 @@ export default function page() {
             <div className="flex flex-col items-center gap-2">
               <img
                 loading="lazy"
-                src="forcontact/logocontact3.png"
+                src="forcontact/logocontact3.Webp"
                 alt="phone"
                 className="w-12 h-12 object-contain"
               />
@@ -82,7 +82,7 @@ export default function page() {
             <div className="flex flex-col items-center gap-2">
               <img
                 loading="lazy"
-                src="forcontact/logocontact4.png"
+                src="forcontact/logocontact4.Webp"
                 alt="hours"
                 className="w-12 h-12 object-contain"
               />
@@ -162,7 +162,7 @@ export default function page() {
           <div className="flex-1">
             <img
               loading="lazy"
-              src="forproductpage/product1.png"
+              src="forproductpage/product1.Webp"
               alt="image"
               className="w-full h-full object-cover"
             />
@@ -170,7 +170,7 @@ export default function page() {
           <div className="flex-1">
             <img
               loading="lazy"
-              src="forproductpage/product7.png"
+              src="forproductpage/product7.Webp"
               alt="image"
               className="w-full h-full object-cover"
             />
@@ -181,7 +181,7 @@ export default function page() {
           <div className="h-full">
             <img
               loading="lazy"
-              src="forproductpage/product5.png"
+              src="forproductpage/product5.Webp"
               alt="image"
               className="w-full h-full object-cover"
             />
@@ -192,7 +192,7 @@ export default function page() {
           <div className="flex-1">
             <img
               loading="lazy"
-              src="forproductpage/product6.png"
+              src="forproductpage/product6.Webp"
               alt="image"
               className="w-full h-full object-cover"
             />
@@ -200,7 +200,7 @@ export default function page() {
           <div className="flex-1">
             <img
               loading="lazy"
-              src="forproductpage/product2.png"
+              src="forproductpage/product2.Webp"
               alt="image"
               className="w-full h-full object-cover"
             />
@@ -208,7 +208,7 @@ export default function page() {
           <div className="flex-1">
             <img
               loading="lazy"
-              src="forproductpage/product8.png"
+              src="forproductpage/product8.Webp"
               alt="image"
               className="w-full h-full object-cover"
             />

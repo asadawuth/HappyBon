@@ -36,7 +36,7 @@ export default function page() {
           {/* Right */}
           <div className="w-1/2">
             <img
-              src="forproductpage/product1.png"
+              src="forproductpage/product1.Webp"
               alt="layout1"
               className="w-full h-full object-cover"
             />
@@ -46,7 +46,7 @@ export default function page() {
         <div className="relative w-full overflow-hidden p-2 sm:p-2 md:p-4 lg:p-4 xl:p-6 2xl:p-8">
           <img
             loading="lazy"
-            src="forproductpage/product2.png"
+            src="forproductpage/product2.Webp"
             alt="image"
             className="w-full"
           />
@@ -75,7 +75,7 @@ export default function page() {
           <div className="w-2/3">
             <img
               loading="lazy"
-              src="forproductpage/product3.png"
+              src="forproductpage/product3.Webp"
               alt="Pizza Twist"
               className="w-full h-full object-cover"
             />
@@ -138,7 +138,7 @@ export default function page() {
             <div className="pr-2">
               <img
                 loading="lazy"
-                src="forproductpage/product4.png"
+                src="forproductpage/product4.Webp"
                 alt="image"
                 className="w-full h-auto object-cover"
               />
@@ -204,7 +204,7 @@ export default function page() {
         <div className="relative w-full overflow-hidden px-2 py-1 sm:p-2 md:p-4 lg:p-4 xl:p-6 2xl:p-8">
           <img
             loading="lazy"
-            src="forproductpage/product6.png"
+            src="forproductpage/product6.Webp"
             alt="image"
             className="w-full"
           />
@@ -236,7 +236,7 @@ export default function page() {
           <div className="w-1/2 h-full">
             <img
               loading="lazy"
-              src="forproductpage/product7.png"
+              src="forproductpage/product7.Webp"
               alt="Pizza Bite"
               className="w-full h-full"
             />
@@ -264,7 +264,7 @@ export default function page() {
         <div className="relative w-full overflow-hidden px-2 py-1 sm:p-2 md:p-4 lg:p-4 xl:p-6 2xl:p-8">
           <img
             loading="lazy"
-            src="forproductpage/product8.png"
+            src="forproductpage/product8.Webp"
             alt="image"
             className="w-full"
           />
