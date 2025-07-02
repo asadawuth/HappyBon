@@ -3,7 +3,12 @@ export default function Page() {
     <>
       {/* layout 1 */}
       <div className="relative w-full overflow-hidden">
-        <img src="forhomepage/homeimage1.png" alt="image" className="w-full" />
+        <img
+          loading="lazy"
+          src="forhomepage/homeimage1.png"
+          alt="image"
+          className="w-full"
+        />
       </div>
       {/* layout 1 */}
       {/* layout 2 */}
@@ -122,6 +127,7 @@ export default function Page() {
 
         <div className="w-2/3 h-auto">
           <img
+            loading="lazy"
             src="forhomepage/homeimage2.png"
             alt="image"
             className="w-full h-full object-cover"
@@ -139,6 +145,7 @@ export default function Page() {
         <div className="flex justify-around gap-4 overflow-x-auto max-w-full">
           <div className="bg-[#f5e8d8] rounded-xl shadow-lg p-4 hover:scale-95">
             <img
+              loading="lazy"
               src="forhomepage/image1.png"
               alt="image1"
               className="w-96 h-auto object-contain cursor-pointer"
@@ -146,6 +153,7 @@ export default function Page() {
           </div>
           <div className="bg-[#f5e8d8] rounded-xl shadow-lg p-4 hover:scale-95">
             <img
+              loading="lazy"
               src="forhomepage/image2.png"
               alt="image2"
               className="w-96 h-auto object-contain cursor-pointer"
@@ -153,6 +161,7 @@ export default function Page() {
           </div>
           <div className="bg-[#f5e8d8] rounded-xl shadow-lg p-4 hover:scale-95">
             <img
+              loading="lazy"
               src="forhomepage/image3.png"
               alt="image3"
               className="w-96 h-auto object-contain cursor-pointer"
@@ -165,6 +174,7 @@ export default function Page() {
       <div className="relative w-full bg-black">
         {/* Background Image */}
         <img
+          loading="lazy"
           src="forhomepage/bglasthome.png"
           alt="background"
           className="w-full h-auto object-cover"
@@ -212,6 +222,7 @@ export default function Page() {
                 "
                 >
                   <img
+                    loading="lazy"
                     src="forhomepage/logohome1.png"
                     alt="Developed by R&D"
                     className="w-6 h-6 sm:w-6 sm:h-6 md:h-6 md:w-6 lg:w-10 lg:h-10 xl:h-10 xl:w-10 2xl:w-10 2xl:h-10"

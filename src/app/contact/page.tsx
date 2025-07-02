@@ -12,6 +12,7 @@ export default function page() {
           src="forcontact/contact1.png"
           alt="image"
           className="w-full h-auto object-cover"
+          loading="lazy"
         />
         <div className="absolute inset-0 flex items-center justify-center">
           <h1 className="text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-7xl 2xl:text-9xl font-serif">
@@ -35,6 +36,7 @@ export default function page() {
             {/* Location */}
             <div className="flex flex-col items-center gap-2">
               <img
+                loading="lazy"
                 src="forcontact/logocontact1.png"
                 alt="location"
                 className="w-12 h-12 object-contain"
@@ -50,6 +52,7 @@ export default function page() {
             {/* Email */}
             <div className="flex flex-col items-center gap-2">
               <img
+                loading="lazy"
                 src="forcontact/logocontact2.png"
                 alt="email"
                 className="w-12 h-12 object-contain"
@@ -66,6 +69,7 @@ export default function page() {
             {/* Phone */}
             <div className="flex flex-col items-center gap-2">
               <img
+                loading="lazy"
                 src="forcontact/logocontact3.png"
                 alt="phone"
                 className="w-12 h-12 object-contain"
@@ -77,6 +81,7 @@ export default function page() {
             {/* Hours */}
             <div className="flex flex-col items-center gap-2">
               <img
+                loading="lazy"
                 src="forcontact/logocontact4.png"
                 alt="hours"
                 className="w-12 h-12 object-contain"
@@ -156,6 +161,7 @@ export default function page() {
         <div className="flex flex-col gap-2 w-full lg:w-1/3">
           <div className="flex-1">
             <img
+              loading="lazy"
               src="forproductpage/product1.png"
               alt="image"
               className="w-full h-full object-cover"
@@ -163,28 +169,29 @@ export default function page() {
           </div>
           <div className="flex-1">
             <img
+              loading="lazy"
               src="forproductpage/product7.png"
               alt="image"
               className="w-full h-full object-cover"
             />
           </div>
         </div>
-
         {/* กลาง */}
         <div className="w-full lg:w-1/3">
           <div className="h-full">
             <img
+              loading="lazy"
               src="forproductpage/product5.png"
               alt="image"
               className="w-full h-full object-cover"
             />
           </div>
         </div>
-
         {/* ขวา */}
         <div className="flex flex-col gap-2 w-full lg:w-1/3">
           <div className="flex-1">
             <img
+              loading="lazy"
               src="forproductpage/product6.png"
               alt="image"
               className="w-full h-full object-cover"
@@ -192,6 +199,7 @@ export default function page() {
           </div>
           <div className="flex-1">
             <img
+              loading="lazy"
               src="forproductpage/product2.png"
               alt="image"
               className="w-full h-full object-cover"
@@ -199,6 +207,7 @@ export default function page() {
           </div>
           <div className="flex-1">
             <img
+              loading="lazy"
               src="forproductpage/product8.png"
               alt="image"
               className="w-full h-full object-cover"
@@ -243,13 +252,20 @@ export default function page() {
           <hr className="border-white my-4" />
           <h3 className="text-sm font-semibold mb-2">Our Social Media</h3>
           <div className="flex gap-4 cursor-pointer">
-            <img src="forcontact/line.png" alt="Line" className="w-8 h-8" />
             <img
+              loading="lazy"
+              src="forcontact/line.png"
+              alt="Line"
+              className="w-8 h-8"
+            />
+            <img
+              loading="lazy"
               src="forcontact/facebook.png"
               alt="Facebook"
               className="w-8 h-8 cursor-pointer"
             />
             <img
+              loading="lazy"
               src="forcontact/instagram.png"
               alt="Instagram"
               className="w-8 h-8 cursor-pointer"

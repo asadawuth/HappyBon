@@ -45,6 +45,7 @@ export default function page() {
 
         <div className="relative w-full overflow-hidden p-2 sm:p-2 md:p-4 lg:p-4 xl:p-6 2xl:p-8">
           <img
+            loading="lazy"
             src="forproductpage/product2.png"
             alt="image"
             className="w-full"
@@ -73,6 +74,7 @@ export default function page() {
           {/* ซ้าย - รูปภาพ */}
           <div className="w-2/3">
             <img
+              loading="lazy"
               src="forproductpage/product3.png"
               alt="Pizza Twist"
               className="w-full h-full object-cover"
@@ -135,6 +137,7 @@ export default function page() {
           >
             <div className="pr-2">
               <img
+                loading="lazy"
                 src="forproductpage/product4.png"
                 alt="image"
                 className="w-full h-auto object-cover"
@@ -200,6 +203,7 @@ export default function page() {
 
         <div className="relative w-full overflow-hidden px-2 py-1 sm:p-2 md:p-4 lg:p-4 xl:p-6 2xl:p-8">
           <img
+            loading="lazy"
             src="forproductpage/product6.png"
             alt="image"
             className="w-full"
@@ -231,6 +235,7 @@ export default function page() {
           {/* Left - Image */}
           <div className="w-1/2 h-full">
             <img
+              loading="lazy"
               src="forproductpage/product7.png"
               alt="Pizza Bite"
               className="w-full h-full"
@@ -258,6 +263,7 @@ export default function page() {
 
         <div className="relative w-full overflow-hidden px-2 py-1 sm:p-2 md:p-4 lg:p-4 xl:p-6 2xl:p-8">
           <img
+            loading="lazy"
             src="forproductpage/product8.png"
             alt="image"
             className="w-full"
