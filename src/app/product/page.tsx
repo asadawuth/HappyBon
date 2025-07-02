@@ -167,7 +167,7 @@ export default function page() {
           {/* กลาง */}
           <div className="w-1/3 h-auto z-100">
             <img
-              src="forproductpage/product5.png"
+              src="forproductpage/product5.Webp"
               alt="image"
               className="w-full h-full  object-cover"
             />
