@@ -20,7 +20,6 @@ export default function page() {
     });
 
     observer.observe(ref.current);
-
     return () => observer.disconnect();
   }, []);
   return (
