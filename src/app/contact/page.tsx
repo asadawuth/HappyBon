@@ -32,7 +32,7 @@ export default function Page() {
           width={1280}
           height={720}
           priority
-          quality={40}
+          quality={60}
           className="w-full h-auto object-cover"
         />
         <div className="absolute inset-0 flex items-center justify-center">
@@ -63,6 +63,7 @@ export default function Page() {
                 height={48}
                 className="object-contain"
                 loading="lazy"
+                fetchPriority="low"
               />
               <h1 className="font-semibold text-lg">Our Location</h1>
               <p className="text-sm text-center">
@@ -82,6 +83,7 @@ export default function Page() {
                 height={48}
                 className="object-contain"
                 loading="lazy"
+                fetchPriority="low"
               />
               <h1 className="font-semibold text-lg">Our Email</h1>
               <p className="text-sm text-center">
@@ -102,6 +104,7 @@ export default function Page() {
                 height={48}
                 className="object-contain"
                 loading="lazy"
+                fetchPriority="low"
               />
               <h1 className="font-semibold text-lg">Our Phone</h1>
               <p className="text-sm text-center">P : (+66) 626265629</p>
@@ -117,6 +120,7 @@ export default function Page() {
                 height={48}
                 className="object-contain"
                 loading="lazy"
+                fetchPriority="low"
               />
               <h1 className="font-semibold text-lg">Open Hours</h1>
               <p className="text-sm text-center">
@@ -230,11 +234,10 @@ export default function Page() {
               alt="image"
               width={800}
               height={800}
-              quality={48}
               className="w-full h-full object-cover"
               loading="lazy"
+              quality={48}
               fetchPriority="low"
-              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
             />
           </div>
         </div>
