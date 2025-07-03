@@ -1,16 +1,16 @@
 "use client";
 import dynamic from "next/dynamic";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 const LeafletMap = dynamic(() => import("../../component/LeafletMap"), {
   ssr: false,
 });
 import Image from "next/image";
 export default function page() {
   const [showMap, setShowMap] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const el = document.getElementById("map-container");
-    if (!el) return;
+    if (!ref.current) return;
 
     const observer = new IntersectionObserver(([entry]) => {
       if (entry.isIntersecting) {
@@ -19,7 +19,9 @@ export default function page() {
       }
     });
 
-    observer.observe(el);
+    observer.observe(ref.current);
+
+    return () => observer.disconnect();
   }, []);
   return (
     <div className="bg-[#212D39]">
@@ -175,10 +177,15 @@ export default function page() {
             </div>
           </div>
         </div>
-        <div className="w-full lg:w-1/3">
-          <div className="h-[500px]">
+        <div
+          ref={ref}
+          className="w-full h-[500px] rounded-xl overflow-hidden xl:w-1/3 2xl:w-1/3"
+        >
+          {showMap ? (
             <LeafletMap />
-          </div>
+          ) : (
+            <div className="w-full h-full bg-gray-300 animate-pulse rounded-xl" />
+          )}
         </div>
       </div>
       {/* layout3 */}
