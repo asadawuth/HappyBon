@@ -207,7 +207,7 @@ export default function Page() {
               alt="image"
               width={800}
               height={600}
-              quality={48}
+              quality={30}
               loading="lazy"
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 33vw"
               fetchPriority="low"
@@ -221,7 +221,7 @@ export default function Page() {
               alt="image"
               width={800}
               height={200}
-              quality={48}
+              quality={30}
               fetchPriority="low"
               className="w-full h-full object-cover"
             />
@@ -232,13 +232,13 @@ export default function Page() {
           <div className="h-full">
             <Image
               src="/forproductpage/product5.Webp"
-              alt="Product"
+              alt="image"
               width={800}
               height={800}
-              quality={48}
-              className="w-full h-auto object-cover"
+              className="w-full h-full object-cover"
               loading="lazy"
-              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+              quality={30}
+              fetchPriority="low"
             />
           </div>
         </div>
@@ -246,7 +246,7 @@ export default function Page() {
         <div className="flex flex-col gap-2 w-full lg:w-1/3">
           <div className="flex-1">
             <Image
-              quality={48}
+              quality={30}
               fetchPriority="low"
               src="/forproductpage/product6.Webp"
               alt="image"
@@ -258,7 +258,7 @@ export default function Page() {
           </div>
           <div className="flex-1">
             <Image
-              quality={48}
+              quality={30}
               fetchPriority="low"
               src="/forproductpage/product2.Webp"
               alt="image"
@@ -270,7 +270,7 @@ export default function Page() {
           </div>
           <div className="flex-1">
             <Image
-              quality={48}
+              quality={30}
               fetchPriority="low"
               loading="lazy"
               alt="image"
