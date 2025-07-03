@@ -1,13 +1,18 @@
+import Image from "next/image";
 export default function Page() {
   return (
     <>
       {/* layout 1 */}
       <div className="relative w-full overflow-hidden">
-        <img
-          loading="lazy"
-          src="forhomepage/homeimage1.Webp"
+        <Image
+          src="/forhomepage/homeimage1.Webp"
           alt="image"
-          className="w-full"
+          width={1280}
+          height={720}
+          quality={40}
+          priority
+          sizes="100vw"
+          style={{ width: "100%", height: "auto" }}
         />
       </div>
       {/* layout 1 */}
