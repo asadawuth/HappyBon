@@ -232,13 +232,13 @@ export default function Page() {
           <div className="h-full">
             <Image
               src="/forproductpage/product5.Webp"
-              alt="image"
+              alt="Product"
               width={800}
               height={800}
-              className="w-full h-full object-cover"
-              loading="lazy"
               quality={48}
-              fetchPriority="low"
+              className="w-full h-auto object-cover"
+              loading="lazy"
+              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
             />
           </div>
         </div>
