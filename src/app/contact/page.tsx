@@ -200,6 +200,8 @@ export default function Page() {
               alt="image"
               width={800}
               height={600}
+              quality={50}
+              fetchPriority="low"
               className="w-full h-full object-cover"
             />
           </div>
@@ -210,6 +212,8 @@ export default function Page() {
               alt="image"
               width={800}
               height={200}
+              quality={50}
+              fetchPriority="low"
               className="w-full h-full object-cover"
             />
           </div>
@@ -224,6 +228,8 @@ export default function Page() {
               height={800}
               className="w-full h-full object-cover"
               loading="lazy"
+              quality={50}
+              fetchPriority="low"
             />
           </div>
         </div>
@@ -231,6 +237,8 @@ export default function Page() {
         <div className="flex flex-col gap-2 w-full lg:w-1/3">
           <div className="flex-1">
             <Image
+              quality={50}
+              fetchPriority="low"
               src="/forproductpage/product6.Webp"
               alt="image"
               width={800}
@@ -241,6 +249,8 @@ export default function Page() {
           </div>
           <div className="flex-1">
             <Image
+              quality={50}
+              fetchPriority="low"
               src="/forproductpage/product2.Webp"
               alt="image"
               width={800}
@@ -251,6 +261,8 @@ export default function Page() {
           </div>
           <div className="flex-1">
             <Image
+              quality={50}
+              fetchPriority="low"
               loading="lazy"
               alt="image"
               width={800}
