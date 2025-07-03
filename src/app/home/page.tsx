@@ -5,13 +5,13 @@ export default function Page() {
       {/* layout 1 */}
       <div className="relative w-full">
         <Image
-          src="/forhomepage/homeimage1.Webp"
+          src="/forhomepage/homeimage1.webp"
           alt="image"
           width={1280}
           height={720}
           quality={40}
           priority
-          sizes="100vw"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"
           style={{ width: "100%", height: "auto" }}
         />
       </div>
