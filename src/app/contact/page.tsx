@@ -32,7 +32,7 @@ export default function Page() {
           width={1280}
           height={720}
           priority
-          quality={60}
+          quality={50}
           className="w-full h-auto object-cover"
         />
         <div className="absolute inset-0 flex items-center justify-center">
@@ -230,10 +230,11 @@ export default function Page() {
               alt="image"
               width={800}
               height={800}
+              quality={48}
               className="w-full h-full object-cover"
               loading="lazy"
-              quality={48}
               fetchPriority="low"
+              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
             />
           </div>
         </div>
