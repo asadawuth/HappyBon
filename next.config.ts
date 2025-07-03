@@ -6,5 +6,6 @@ const nextConfig = {
   swcMinify: true,
   experimental: {
     optimizeCss: true,
+    legacyBrowsers: false,
   },
 };
