@@ -233,9 +233,12 @@ export default function Page() {
             <Image
               src="/forproductpage/product5.Webp"
               alt="image"
-              fill
-              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-              className="object-cover"
+              width={800}
+              height={800}
+              className="w-full h-full object-cover"
+              loading="lazy"
+              quality={48}
+              fetchPriority="low"
             />
           </div>
         </div>
