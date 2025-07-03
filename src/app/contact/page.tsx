@@ -33,6 +33,7 @@ export default function Page() {
           height={720}
           priority
           quality={60}
+          fetchPriority="low"
           className="w-full h-auto object-cover"
         />
         <div className="absolute inset-0 flex items-center justify-center">
@@ -325,6 +326,7 @@ export default function Page() {
               width={32}
               height={32}
               className="w-8 h-8"
+              fetchPriority="low"
             />
 
             <Image
@@ -334,6 +336,7 @@ export default function Page() {
               width={32}
               height={32}
               className="w-8 h-8 cursor-pointer"
+              fetchPriority="low"
             />
 
             <Image
@@ -343,6 +346,7 @@ export default function Page() {
               width={32}
               height={32}
               className="w-8 h-8 cursor-pointer"
+              fetchPriority="low"
             />
           </div>
         </div>
