@@ -32,7 +32,7 @@ export default function Page() {
           width={1280}
           height={720}
           priority
-          quality={60} // เพิ่ม ถ้าใช้ next/image
+          quality={60}
           className="w-full h-auto object-cover"
         />
         <div className="absolute inset-0 flex items-center justify-center">
@@ -75,6 +75,7 @@ export default function Page() {
             {/* Email */}
             <div className="flex flex-col items-center gap-2">
               <Image
+                quality={50}
                 src="/forcontact/logocontact2.Webp"
                 alt="email"
                 width={48}
@@ -94,6 +95,7 @@ export default function Page() {
             {/* Phone */}
             <div className="flex flex-col items-center gap-2">
               <Image
+                quality={50}
                 src="/forcontact/logocontact3.Webp"
                 alt="phone"
                 width={48}
@@ -108,6 +110,7 @@ export default function Page() {
             {/* Hours */}
             <div className="flex flex-col items-center gap-2">
               <Image
+                quality={50}
                 src="/forcontact/logocontact4.Webp"
                 alt="hours"
                 width={48}
@@ -195,12 +198,13 @@ export default function Page() {
         <div className="flex flex-col gap-2 w-full lg:w-1/3">
           <div className="flex-1">
             <Image
-              loading="lazy"
               src="/forproductpage/product1.Webp"
               alt="image"
               width={800}
               height={600}
               quality={48}
+              loading="lazy"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 33vw"
               fetchPriority="low"
               className="w-full h-full object-cover"
             />
