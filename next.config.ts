@@ -8,6 +8,7 @@ const nextConfig = {
     optimizeCss: true,
     legacyBrowsers: false,
   },
+
   images: {
     formats: ["image/webp", "image/avif"],
   },
