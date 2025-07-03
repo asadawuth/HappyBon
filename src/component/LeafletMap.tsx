@@ -9,10 +9,9 @@ const position: [number, number] = [13.657668, 100.661151];
 
 delete (L.Icon.Default.prototype as any)._getIconUrl;
 L.Icon.Default.mergeOptions({
-  iconRetinaUrl:
-    "https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png",
-  iconUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png",
-  shadowUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png",
+  iconRetinaUrl: "/leaflet/marker-icon-2x.Webp",
+  iconUrl: "/leaflet/marker-icon-2x.Webp",
+  shadowUrl: "/leaflet/marker-shadow.Webp",
 });
 
 function CenterMapOnMarker({ position }: { position: [number, number] }) {

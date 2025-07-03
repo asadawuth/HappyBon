@@ -13,9 +13,9 @@ export default function page() {
           src="/forcontact/contact1.Webp"
           alt="Contact"
           width={1920}
-          height={1080} // ✅ 16:9 หรือใช้ขนาดของภาพจริง
+          height={1080}
           className="w-full h-auto object-cover"
-          priority // ✅ เพราะเป็นรูปด้านบนสุด
+          priority
         />
         <div className="absolute inset-0 flex items-center justify-center">
           <h1 className="text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-7xl 2xl:text-9xl font-serif">
@@ -232,7 +232,7 @@ export default function page() {
               alt="image"
               width={800}
               height={800}
-              src="forproductpage/product8.Webp"
+              src="/forproductpage/product8.Webp"
               className="w-full h-full object-cover"
             />
           </div>
