@@ -32,7 +32,7 @@ export default function Page() {
           width={1280}
           height={720}
           priority
-          quality={60}
+          quality={50}
           fetchPriority="low"
           className="w-full h-auto object-cover"
         />
