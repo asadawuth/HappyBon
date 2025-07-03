@@ -3,16 +3,16 @@ export default function Page() {
   return (
     <>
       {/* layout 1 */}
-      <div className="relative w-full">
+      <div className="w-full relative">
         <Image
-          src="/forhomepage/homeimage1.webp"
+          src="/forhomepage/homeimage1.Webp"
           alt="image"
           width={1280}
           height={720}
-          quality={40}
           priority
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"
-          style={{ width: "100%", height: "auto" }}
+          quality={50}
+          fetchPriority="low"
+          className="w-full h-auto object-cover"
         />
       </div>
       {/* layout 1 */}
