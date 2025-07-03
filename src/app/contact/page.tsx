@@ -29,10 +29,11 @@ export default function Page() {
         <Image
           src="/forcontact/contact1.Webp"
           alt="Contact"
-          width={1920}
-          height={1080}
-          className="w-full h-auto object-cover"
+          width={1280}
+          height={720}
           priority
+          quality={60} // เพิ่ม ถ้าใช้ next/image
+          className="w-full h-auto object-cover"
         />
         <div className="absolute inset-0 flex items-center justify-center">
           <h1 className="text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-7xl 2xl:text-9xl font-serif">
