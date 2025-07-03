@@ -11,7 +11,7 @@ export default function Page() {
           height={720}
           priority
           quality={50}
-          fetchPriority="low"
+          fetchPriority="high"
           className="w-full h-auto object-cover"
         />
       </div>
