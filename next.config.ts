@@ -1,8 +1,4 @@
-const withBundleAnalyzer = require("@next/bundle-analyzer")({
-  enabled: process.env.ANALYZE === "true",
-});
-
-const nextConfig = withBundleAnalyzer({
+const nextConfig = {
   compress: true,
   swcMinify: true,
   eslint: {
@@ -15,13 +11,6 @@ const nextConfig = withBundleAnalyzer({
   images: {
     formats: ["image/webp", "image/avif"],
   },
-  modularizeImports: {
-    lodash: {
-      transform: "lodash/{{member}}",
-    },
-    "date-fns": {
-      transform: "date-fns/{{member}}",
-    },
-  },
-});
+};
+
 module.exports = nextConfig;
