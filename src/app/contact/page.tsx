@@ -1,10 +1,26 @@
 "use client";
 import dynamic from "next/dynamic";
+import { useEffect, useState } from "react";
 const LeafletMap = dynamic(() => import("../../component/LeafletMap"), {
   ssr: false,
 });
 import Image from "next/image";
 export default function page() {
+  const [showMap, setShowMap] = useState(false);
+
+  useEffect(() => {
+    const el = document.getElementById("map-container");
+    if (!el) return;
+
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) {
+        setShowMap(true);
+        observer.disconnect();
+      }
+    });
+
+    observer.observe(el);
+  }, []);
   return (
     <div className="bg-[#212D39]">
       {/* layout1 */}
