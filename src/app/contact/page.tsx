@@ -5,7 +5,7 @@ const LeafletMap = dynamic(() => import("../../component/LeafletMap"), {
   ssr: false,
 });
 import Image from "next/image";
-export default function page() {
+export default function Page() {
   const [showMap, setShowMap] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
 
