@@ -3,7 +3,7 @@ export default function Page() {
   return (
     <>
       {/* layout 1 */}
-      <div className="relative w-full overflow-hidden">
+      <div className="relative w-full">
         <Image
           src="/forhomepage/homeimage1.Webp"
           alt="image"
