@@ -10,8 +10,10 @@ export default function Page() {
           width={1280}
           height={720}
           priority
-          quality={50}
-          fetchPriority="high"
+          quality={30}
+          sizes="(max-width: 768px) 100vw, 1280px"
+          placeholder="blur"
+          blurDataURL="data:image/webp;base64,..."
           className="w-full h-auto object-cover"
         />
       </div>
