@@ -185,7 +185,7 @@ export default function Page() {
             alt="background"
             fill
             priority={false}
-            quality={70}
+            quality={100}
             sizes="100vw"
             className="object-cover"
           />
@@ -254,6 +254,7 @@ export default function Page() {
                   >
                     <div className="relative w-6 h-6 sm:w-6 sm:h-6 md:w-6 md:h-6 lg:w-10 lg:h-10 xl:w-10 xl:h-10 2xl:w-10 2xl:h-10">
                       <Image
+                        quality={100}
                         src={item.src}
                         alt={item.alt}
                         fill
@@ -311,7 +312,7 @@ export default function Page() {
           <h3 className="text-sm font-semibold mb-2">Our Social Media</h3>
           <div className="flex gap-4 cursor-pointer">
             <Image
-              quality={50}
+              quality={100}
               src="/forcontact/line.Webp"
               alt="Line"
               width={32}
@@ -321,7 +322,7 @@ export default function Page() {
             />
 
             <Image
-              quality={50}
+              quality={100}
               src="/forcontact/facebook.Webp"
               alt="Facebook"
               width={32}
@@ -331,7 +332,7 @@ export default function Page() {
             />
 
             <Image
-              quality={50}
+              quality={100}
               src="/forcontact/instagram.Webp"
               alt="Instagram"
               width={32}

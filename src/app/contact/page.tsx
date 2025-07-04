@@ -32,7 +32,7 @@ export default function Page() {
           width={1280}
           height={720}
           priority
-          quality={50}
+          quality={100}
           fetchPriority="low"
           className="w-full h-auto object-cover"
         />
@@ -62,6 +62,7 @@ export default function Page() {
                 alt="location"
                 width={48}
                 height={48}
+                quality={100}
                 className="object-contain"
                 loading="lazy"
                 fetchPriority="low"
@@ -77,7 +78,7 @@ export default function Page() {
             {/* Email */}
             <div className="flex flex-col items-center gap-2">
               <Image
-                quality={50}
+                quality={100}
                 src="/forcontact/logocontact2.Webp"
                 alt="email"
                 width={48}
@@ -98,7 +99,7 @@ export default function Page() {
             {/* Phone */}
             <div className="flex flex-col items-center gap-2">
               <Image
-                quality={50}
+                quality={100}
                 src="/forcontact/logocontact3.Webp"
                 alt="phone"
                 width={48}
@@ -114,7 +115,7 @@ export default function Page() {
             {/* Hours */}
             <div className="flex flex-col items-center gap-2">
               <Image
-                quality={50}
+                quality={100}
                 src="/forcontact/logocontact4.Webp"
                 alt="hours"
                 width={48}
@@ -207,7 +208,7 @@ export default function Page() {
               alt="image"
               width={800}
               height={600}
-              quality={30}
+              quality={100}
               loading="lazy"
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 33vw"
               fetchPriority="low"
@@ -221,7 +222,7 @@ export default function Page() {
               alt="image"
               width={800}
               height={200}
-              quality={30}
+              quality={100}
               fetchPriority="low"
               className="w-full h-full object-cover"
             />
@@ -237,7 +238,7 @@ export default function Page() {
               height={800}
               className="w-full h-full object-cover"
               loading="lazy"
-              quality={30}
+              quality={100}
               fetchPriority="low"
             />
           </div>
@@ -246,7 +247,7 @@ export default function Page() {
         <div className="flex flex-col gap-2 w-full lg:w-1/3">
           <div className="flex-1">
             <Image
-              quality={30}
+              quality={100}
               fetchPriority="low"
               src="/forproductpage/product6.Webp"
               alt="image"
@@ -258,7 +259,7 @@ export default function Page() {
           </div>
           <div className="flex-1">
             <Image
-              quality={30}
+              quality={100}
               fetchPriority="low"
               src="/forproductpage/product2.Webp"
               alt="image"
@@ -270,7 +271,7 @@ export default function Page() {
           </div>
           <div className="flex-1">
             <Image
-              quality={30}
+              quality={100}
               fetchPriority="low"
               loading="lazy"
               alt="image"
@@ -320,7 +321,7 @@ export default function Page() {
           <h3 className="text-sm font-semibold mb-2">Our Social Media</h3>
           <div className="flex gap-4 cursor-pointer">
             <Image
-              quality={50}
+              quality={100}
               src="/forcontact/line.Webp"
               alt="Line"
               width={32}
@@ -330,7 +331,7 @@ export default function Page() {
             />
 
             <Image
-              quality={50}
+              quality={100}
               src="/forcontact/facebook.Webp"
               alt="Facebook"
               width={32}
@@ -340,7 +341,7 @@ export default function Page() {
             />
 
             <Image
-              quality={50}
+              quality={100}
               src="/forcontact/instagram.Webp"
               alt="Instagram"
               width={32}
