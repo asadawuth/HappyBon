@@ -10,7 +10,7 @@ export default function Page() {
           width={1280}
           height={720}
           priority
-          quality={30}
+          quality={100}
           sizes="(max-width: 768px) 100vw, 1280px"
           placeholder="blur"
           blurDataURL="data:image/webp;base64,..."
@@ -150,7 +150,7 @@ export default function Page() {
           </h1>
         </div>
 
-        <div className="flex flex-col lg:flex-row justify-around items-center gap-8 lg:gap-4">
+        <div className="flex flex-col md:flex-row md:justify-around md:items-center gap-8 lg:gap-4">
           {[
             { src: "/forhomepage/image1.Webp", alt: "image1" },
             { src: "/forhomepage/image2.Webp", alt: "image2" },
@@ -165,9 +165,9 @@ export default function Page() {
                   src={item.src}
                   alt={item.alt}
                   fill
-                  quality={70}
+                  quality={100}
                   loading="lazy"
-                  className="object-contain cursor-pointer"
+                  className="object-contain cursor-pointer w-full"
                   sizes="(max-width: 768px) 90vw, 384px"
                 />
               </div>
@@ -177,7 +177,7 @@ export default function Page() {
       </div>
       {/* layout 4 */}
       {/* Layout 5 */}
-      <div className="relative w-full bg-black/40">
+      <div className="relative w-full bg-black/25">
         {/* ✅ Background Image แบบเต็มหน้าจอ */}
         <div className="absolute inset-0 -z-10">
           <Image
@@ -275,7 +275,103 @@ export default function Page() {
         </div>
       </div>
       {/* Layout 5 */}
-      <div className="bg-black h-[8vh] sm:h-[2vh] md:h-[4vh] lg:h-[4vh] xl:h-[4vh] 2xl:h-[4vh]"></div>
+      <div className="w-full bg-[#1E2A38] text-white py-12 flex flex-col md:flex-row">
+        <div className="md:w-1/6 w-full flex justify-start items-center px-4 md:px-8 mb-6 md:mb-0">
+          <div className="block md:hidden text-center w-full">
+            <h1 className="text-2xl font-serif">IVFOOD</h1>
+            <hr className="border-white border-t-2 w-1/2 mx-auto mt-2" />
+          </div>
+
+          {/* สำหรับหน้าจอ md ขึ้นไป */}
+          <div className="hidden md:flex relative h-full items-center gap-4">
+            {/* ตัวอักษรแนวตั้ง */}
+            <h1
+              className="text-4xl tracking-widest font-serif pr-6"
+              style={{
+                writingMode: "vertical-rl",
+                textOrientation: "upright",
+              }}
+            >
+              DOOFIV
+            </h1>
+
+            {/* เส้นแนวตั้ง */}
+            <div className="absolute right-0 top-0 bottom-0 w-[2px] bg-white" />
+          </div>
+        </div>
+
+        {/* About Us */}
+        <div className="md:w-1/3 w-full px-6 mb-8 md:mb-0">
+          <h2 className="text-xl font-semibold mb-4">About Us</h2>
+          <p className="text-sm mb-6">
+            We continuously develop and innovate new bread recipes with our team
+            of experts to ensure the best taste and quality in every bite.
+          </p>
+          <hr className="border-white my-4" />
+          <h3 className="text-sm font-semibold mb-2">Our Social Media</h3>
+          <div className="flex gap-4 cursor-pointer">
+            <Image
+              quality={50}
+              src="/forcontact/line.Webp"
+              alt="Line"
+              width={32}
+              height={32}
+              className="w-8 h-8"
+              fetchPriority="low"
+            />
+
+            <Image
+              quality={50}
+              src="/forcontact/facebook.Webp"
+              alt="Facebook"
+              width={32}
+              height={32}
+              className="w-8 h-8 cursor-pointer"
+              fetchPriority="low"
+            />
+
+            <Image
+              quality={50}
+              src="/forcontact/instagram.Webp"
+              alt="Instagram"
+              width={32}
+              height={32}
+              className="w-8 h-8 cursor-pointer"
+              fetchPriority="low"
+            />
+          </div>
+        </div>
+
+        {/* Our Location */}
+        <div className="md:w-1/3 w-full px-6 mb-8 md:mb-0">
+          <h2 className="text-xl font-semibold mb-4">Our Location</h2>
+          <p className="text-sm mb-2">
+            A : 89/24, Bang Kaeo, Bang Phli District, Samut Prakan 10540.
+          </p>
+          <p className="text-sm mb-2">
+            E :{" "}
+            <a href="mailto:vifoodlab@gmail.com" className="underline">
+              vifoodlab@gmail.com
+            </a>
+          </p>
+          <p className="text-sm">P : (+66) 626265629</p>
+        </div>
+
+        {/* Open Hours */}
+        <div className="md:w-1/3 w-full px-6">
+          <h2 className="text-xl font-semibold mb-4">Open Hours</h2>
+          <div className="text-sm space-y-1">
+            <p>Mon – Tues&nbsp;&nbsp;&nbsp; 09:00 AM – 19:00 PM</p>
+            <p>Wed – Thur&nbsp;&nbsp;&nbsp; 10:00 AM – 20:00 PM</p>
+            <p>
+              Friday&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 13:00 PM –
+              21:00 PM
+            </p>
+            <p>Saturday&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 09:00 AM – 23:00 PM</p>
+            <p>Sunday&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CLOSED</p>
+          </div>
+        </div>
+      </div>
     </>
   );
 }
