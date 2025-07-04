@@ -3,6 +3,7 @@ import { AiOutlineMenu } from "react-icons/ai";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import Link from "next/link";
 export default function Header() {
   const pathname = usePathname();
   const [openDropdown, setOpenDropdown] = useState(false);
@@ -34,46 +35,46 @@ export default function Header() {
               LIFE&apos;S TASTY
             </div>
             <div className="flex flex-wrap justify-center gap-6 text-sm text-center text-white">
-              <a
+              <Link
                 href="/home"
                 className={`${
                   pathname === "/home" ? "text-blue-400" : "text-white"
                 } hover:text-blue-400`}
               >
                 Home
-              </a>
-              <a
+              </Link>
+              <Link
                 href="/product"
                 className={`${
                   pathname === "/product" ? "text-blue-400" : "text-white"
                 } hover:text-blue-400`}
               >
                 Product
-              </a>
-              <a
-                href=""
+              </Link>
+              <Link
+                href="#"
                 className={`${
-                  pathname === "/service" ? "text-blue-400" : "text-white"
+                  pathname === "" ? "text-blue-400" : "text-white"
                 } hover:text-blue-400`}
               >
                 Service
-              </a>
-              <a
-                href=""
+              </Link>
+              <Link
+                href="#"
                 className={`${
-                  pathname === "/ourbrand" ? "text-blue-400" : "text-white"
+                  pathname === "" ? "text-blue-400" : "text-white"
                 } hover:text-blue-400`}
               >
-                Our Brand
-              </a>
-              <a
+                Out Brand
+              </Link>
+              <Link
                 href="/contact"
                 className={`${
                   pathname === "/contact" ? "text-blue-400" : "text-white"
                 } hover:text-blue-400`}
               >
                 Contact
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -91,44 +92,50 @@ export default function Header() {
         <div className="absolute top-20 right-2 bg-white border shadow-lg rounded-lg z-50 w-36 p-2 text-black">
           <ul className="flex flex-col gap-1">
             <li>
-              <a
+              <Link
                 href="/home"
-                className="hover:text-blue-800 hover:bg-gray-200 block w-full px-2 py-1 rounded"
+                className={`hover:text-blue-800 hover:bg-gray-200 block w-full px-2 py-1 rounded ${
+                  pathname === "/home" ? "text-blue-400" : ""
+                } hover:text-blue-400`}
               >
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="/product"
-                className="hover:text-blue-800 hover:bg-gray-200 block w-full px-2 py-1 rounded"
+                className={`hover:text-blue-800 hover:bg-gray-200 block w-full px-2 py-1 rounded ${
+                  pathname === "/product" ? "text-blue-400" : ""
+                } hover:text-blue-400`}
               >
                 Product
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href=""
                 className="hover:text-blue-500 hover:bg-gray-200 block w-full px-2 py-1 rounded"
               >
                 Service
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href=""
                 className="hover:text-blue-800 hover:bg-gray-200 block w-full px-2 py-1 rounded whitespace-nowrap"
               >
                 Our Brand
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="/contact"
-                className="hover:text-blue-800 hover:bg-gray-200 block w-full px-2 py-1 rounded"
+                className={`hover:text-blue-800 hover:bg-gray-200 block w-full px-2 py-1 rounded ${
+                  pathname === "/contact" ? "text-blue-400" : ""
+                } hover:text-blue-400`}
               >
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
