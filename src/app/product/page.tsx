@@ -264,21 +264,22 @@ export default function Page() {
         </div>
 
         <div className="relative w-full overflow-hidden px-2 py-1 sm:p-2 md:p-4 lg:p-4 xl:p-6 2xl:p-8">
-          <img
-            loading="lazy"
-            src="forproductpage/product8.Webp"
-            alt="image"
-            className="w-full"
+          <Image
+            src="/forproductpage/product8.Webp"
+            alt="..."
+            width={800}
+            height={600}
+            className="w-full h-auto"
+            priority
           />
           <div
             className="absolute font-serif bg-opacity-100 text-white 
-          2xl:top-48 2xl:left-16 2xl:text-9xl  
-          xl:top-32 xl:left-14 xl:text-9xl
-          lg:top-28 lg:left-12 lg:text-8xl  
-          md:top-24 md:left-8 md:text-6xl
-          sm:top-16 sm:left-6 sm:text-5xl
-          top-12 left-4 text-4xl
-        "
+    2xl:top-48 2xl:left-16 2xl:text-9xl  
+    xl:top-32 xl:left-14 xl:text-9xl
+    lg:top-28 lg:left-12 lg:text-8xl  
+    md:top-24 md:left-8 md:text-6xl
+    sm:top-16 sm:left-6 sm:text-5xl
+    top-12 left-4 text-4xl"
           >
             Hot bun
           </div>
