@@ -33,7 +33,6 @@ export default function Page() {
           height={720}
           priority
           quality={100}
-          fetchPriority="low"
           className="w-full h-auto object-cover"
         />
         <div className="absolute inset-0 flex items-center justify-center">
