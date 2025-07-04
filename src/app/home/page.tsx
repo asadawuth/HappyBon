@@ -149,58 +149,53 @@ export default function Page() {
             Our Signature Products
           </h1>
         </div>
-        <div className="flex justify-around gap-4 overflow-x-auto max-w-full">
-          <div className="bg-[#f5e8d8] rounded-xl shadow-lg p-4 hover:scale-95">
-            <img
-              loading="lazy"
-              src="forhomepage/image1.Webp"
-              alt="image1"
-              className="w-96 h-auto object-contain cursor-pointer"
-            />
-          </div>
-          <div className="bg-[#f5e8d8] rounded-xl shadow-lg p-4 hover:scale-95">
-            <img
-              loading="lazy"
-              src="forhomepage/image2.Webp"
-              alt="image2"
-              className="w-96 h-auto object-contain cursor-pointer"
-            />
-          </div>
-          <div className="bg-[#f5e8d8] rounded-xl shadow-lg p-4 hover:scale-95">
-            <img
-              loading="lazy"
-              src="forhomepage/image3.Webp"
-              alt="image3"
-              className="w-96 h-auto object-contain cursor-pointer"
-            />
-          </div>
+
+        <div className="flex flex-col lg:flex-row justify-around items-center gap-8 lg:gap-4">
+          {[
+            { src: "/forhomepage/image1.Webp", alt: "image1" },
+            { src: "/forhomepage/image2.Webp", alt: "image2" },
+            { src: "/forhomepage/image3.Webp", alt: "image3" },
+          ].map((item, index) => (
+            <div
+              key={index}
+              className="bg-[#f5e8d8] rounded-xl shadow-lg p-4 hover:scale-95 transition-transform duration-300 w-full max-w-xs"
+            >
+              <div className="relative w-full h-[300px]">
+                <Image
+                  src={item.src}
+                  alt={item.alt}
+                  fill
+                  quality={70}
+                  loading="lazy"
+                  className="object-contain cursor-pointer"
+                  sizes="(max-width: 768px) 90vw, 384px"
+                />
+              </div>
+            </div>
+          ))}
         </div>
       </div>
       {/* layout 4 */}
       {/* Layout 5 */}
-      <div className="relative w-full bg-black">
-        {/* Background Image */}
-        <img
-          loading="lazy"
-          src="forhomepage/bglasthome.Webp"
-          alt="background"
-          className="w-full h-auto object-cover"
-        />
+      <div className="relative w-full bg-black/40">
+        {/* ✅ Background Image แบบเต็มหน้าจอ */}
+        <div className="absolute inset-0 -z-10">
+          <Image
+            src="/forhomepage/bglasthome.Webp"
+            alt="background"
+            fill
+            priority={false}
+            quality={70}
+            sizes="100vw"
+            className="object-cover"
+          />
+        </div>
 
-        <div
-          className="absolute inset-0 bg-black/50 px-4 text-white 
-         sm:px-8 sm:flex sm:flex-col 
-         md:flex md:flex-col
-         lg:flex lg:flex-col 
-         xl:flex xl:flex-col 
-         2xl:flex 2xl:flex-col"
-        >
+        <div className="relative z-10 px-4 text-white sm:px-8 sm:flex sm:flex-col md:flex md:flex-col lg:flex lg:flex-col xl:flex xl:flex-col 2xl:flex 2xl:flex-col">
           <div className="flex flex-col md:gap-4 xl:gap-28 2xl:gap-48">
+            {/* Title & Paragraph */}
             <div className="w-full flex flex-col gap-0 sm:flex sm:flex-col sm:gap-4 sm:pt-2">
-              <h1
-                className="w-full sm:pt-0 md:pt-0 lg:pt-0 xl:pt-0 2xl:pt-0
-               text-xs sm:text-xl md:text-2xl lg:text-5xl 2xl:text-5xl font-serif"
-              >
+              <h1 className="text-xs sm:text-xl md:text-2xl lg:text-5xl 2xl:text-5xl font-serif">
                 How It’s Made
               </h1>
               <p className="sm:pt-2 md:pt-4 lg:pt-4 pt-2 text-xs sm:text-xs md:text-xl 2xl:text-3xl 2xl:pl-28 xl:pt-8 2xl:pt-20 w-full sm:text-center">
@@ -220,117 +215,61 @@ export default function Page() {
               </p>
             </div>
 
-            <div className="w-full flex  justify-center items-start gap-6 sm:gap-8 pt-6 sm:pt-10 px-4 sm:px-10">
-              {/* Developed by R&D */}
-              <div className="flex flex-col items-center text-center w-[100px] min-h-[80px]">
+            {/* Circle icons */}
+            <div className="w-full flex justify-center items-start gap-6 sm:gap-8 pt-6 sm:pt-10 px-4 sm:px-10 flex-wrap">
+              {[
+                {
+                  src: "/forhomepage/logohome1.Webp",
+                  alt: "Developed by R&D",
+                  label: "Developed by R&D",
+                },
+                {
+                  src: "/forhomepage/logohome2.Webp",
+                  alt: "Trial Production",
+                  label: "Trial Production",
+                },
+                {
+                  src: "/forhomepage/logohome3.Webp",
+                  alt: "Quality Assurance",
+                  label: "Quality Assurance",
+                },
+                {
+                  src: "/forhomepage/logohome4.Webp",
+                  alt: "Packaging",
+                  label: "Packaging product",
+                },
+                {
+                  src: "/forhomepage/logohome5.Webp",
+                  alt: "International Delivery",
+                  label: "International Delivery",
+                },
+              ].map((item, index) => (
                 <div
-                  className="bg-[#F2E3C3] rounded-full flex items-center justify-center
-                2xl:w-24 2xl:h-24 xl:w-24 xl:h-24 lg:w-16 lg:h-16 md:w-12 md:h-12 sm:w-10 sm:h-10 w-10 h-10
-                "
+                  key={index}
+                  className="flex flex-col items-center text-center w-[100px] min-h-[80px]"
                 >
-                  <img
-                    loading="lazy"
-                    src="forhomepage/logohome1.Webp"
-                    alt="Developed by R&D"
-                    className="w-6 h-6 sm:w-6 sm:h-6 md:h-6 md:w-6 lg:w-10 lg:h-10 xl:h-10 xl:w-10 2xl:w-10 2xl:h-10"
-                  />
+                  <div
+                    className="bg-[#F2E3C3] rounded-full flex items-center justify-center
+              2xl:w-24 2xl:h-24 xl:w-24 xl:h-24 lg:w-16 lg:h-16 md:w-12 md:h-12 sm:w-10 sm:h-10 w-10 h-10"
+                  >
+                    <div className="relative w-6 h-6 sm:w-6 sm:h-6 md:w-6 md:h-6 lg:w-10 lg:h-10 xl:w-10 xl:h-10 2xl:w-10 2xl:h-10">
+                      <Image
+                        src={item.src}
+                        alt={item.alt}
+                        fill
+                        loading="lazy"
+                        className="object-contain"
+                      />
+                    </div>
+                  </div>
+                  <p
+                    className="hide-xs text-[10px] sm:text-xs min-h-[32px] flex items-center justify-center leading-tight text-wrap
+              mt-0 sm:mt-2 md:mt-2 lg:mt-2 xl:mt-2 2xl:mt-2"
+                  >
+                    {item.label}
+                  </p>
                 </div>
-                <p
-                  className="hide-xs text-[10px] sm:text-xs min-h-[32px] flex items-center justify-center leading-tight
-                     mt-0 sm:mt-2 md:mt-2 lg:mt-2 xl:mt-2 2xl:mt-2 
-                "
-                >
-                  Developed by R&D
-                </p>
-              </div>
-
-              {/* Trial Production */}
-              <div className="flex flex-col items-center  text-center w-[100px] min-h-[80px]">
-                <div
-                  className="bg-[#F2E3C3] rounded-full flex items-center justify-center
-                2xl:w-24 2xl:h-24 xl:w-24 xl:h-24 lg:w-16 lg:h-16 md:w-12 md:h-12  sm:w-10 sm:h-10 w-10 h-10 
-                "
-                >
-                  <img
-                    src="forhomepage/logohome2.Webp"
-                    alt="Trial Production"
-                    className="sm:w-6 sm:h-6 md:h-6 md:w-6 lg:w-10 lg:h-10 xl:h-10 xl:w-10 2xl:w-10 2xl:h-10"
-                  />
-                </div>
-                <p
-                  className="hide-xs text-[10px] sm:text-xs min-h-[32px] flex items-center justify-center leading-tight text-wrap
-                     mt-0 sm:mt-2 md:mt-2 lg:mt-2 xl:mt-2 2xl:mt-2 
-                "
-                >
-                  Trial Production
-                </p>
-              </div>
-
-              {/* Quality Assurance */}
-              <div className="flex flex-col items-center text-center w-[100px] min-h-[80px]">
-                <div
-                  className="bg-[#F2E3C3] rounded-full flex items-center justify-center
-             2xl:w-24 2xl:h-24 xl:w-24 xl:h-24 lg:w-16 lg:h-16 md:w-12 md:h-12  sm:w-10 sm:h-10 w-10 h-10 
-                "
-                >
-                  <img
-                    src="forhomepage/logohome3.Webp"
-                    alt="Quality Assurance"
-                    className="w-6 h-6 sm:w-6 sm:h-6 md:h-6 md:w-6 lg:w-10 lg:h-10 xl:h-10 xl:w-10 2xl:w-10 2xl:h-10"
-                  />
-                </div>
-                <p
-                  className="hide-xs text-[10px] sm:text-xs min-h-[32px] flex items-center justify-center leading-tight text-wrap
-                     mt-0 sm:mt-2 md:mt-2 lg:mt-2 xl:mt-2 2xl:mt-2 
-                "
-                >
-                  Quality Assurance
-                </p>
-              </div>
-
-              {/* Packaging product */}
-              <div className="flex flex-col items-center  text-center w-[100px] min-h-[80px]">
-                <div
-                  className="bg-[#F2E3C3] rounded-full flex items-center justify-center
-                    2xl:w-24 2xl:h-24 xl:w-24 xl:h-24 lg:w-16 lg:h-16 md:w-12 md:h-12  sm:w-10 sm:h-10 w-10 h-10 
-                "
-                >
-                  <img
-                    src="forhomepage/logohome4.Webp"
-                    alt="Packaging"
-                    className="w-6 h-6 sm:w-6 sm:h-6 md:h-6 md:w-6 lg:w-10 lg:h-10 xl:h-10 xl:w-10 2xl:w-10 2xl:h-10"
-                  />
-                </div>
-                <p
-                  className="hide-xs text-[10px] sm:text-xs min-h-[32px] flex items-center justify-center leading-tight text-wrap
-                     mt-0 sm:mt-2 md:mt-2 lg:mt-2 xl:mt-2 2xl:mt-2 
-                "
-                >
-                  Packaging product
-                </p>
-              </div>
-
-              {/* International Delivery */}
-              <div className="flex flex-col items-center text-center w-[100px] min-h-[80px]">
-                <div
-                  className="bg-[#F2E3C3] rounded-full flex items-center justify-center
-              2xl:w-24 2xl:h-24 xl:w-24 xl:h-24 lg:w-16 lg:h-16 md:w-12 md:h-12  sm:w-10 sm:h-10 w-10 h-10
-                "
-                >
-                  <img
-                    src="forhomepage/logohome5.Webp"
-                    alt="International Delivery"
-                    className="w-6 h-6 sm:w-6 sm:h-6 md:h-6 md:w-6 lg:w-10 lg:h-10 xl:h-10 xl:w-10 2xl:w-10 2xl:h-10"
-                  />
-                </div>
-                <p
-                  className="hide-xs text-[10px] sm:text-xs  min-h-[32px] flex items-center justify-center leading-tight text-wrap
-                mt-0 sm:mt-2 md:mt-2 lg:mt-2 xl:mt-2 2xl:mt-2 
-                "
-                >
-                  International Delivery
-                </p>
-              </div>
+              ))}
             </div>
           </div>
         </div>
