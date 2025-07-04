@@ -46,11 +46,13 @@ export default function Page() {
         </div>
 
         <div className="relative w-full overflow-hidden p-2 sm:p-2 md:p-4 lg:p-4 xl:p-6 2xl:p-8">
-          <img
-            loading="lazy"
-            src="forproductpage/product2.Webp"
-            alt="image"
-            className="w-full"
+          <Image
+            src="/forproductpage/product2.Webp"
+            alt="..."
+            width={800}
+            height={600}
+            className="w-full h-auto"
+            priority
           />
           <div
             className="absolute text-white
@@ -204,11 +206,13 @@ export default function Page() {
         </div>
 
         <div className="relative w-full overflow-hidden px-2 py-1 sm:p-2 md:p-4 lg:p-4 xl:p-6 2xl:p-8">
-          <img
-            loading="lazy"
-            src="forproductpage/product6.Webp"
-            alt="image"
-            className="w-full"
+          <Image
+            src="/forproductpage/product6.Webp"
+            alt="..."
+            width={800}
+            height={600}
+            className="w-full h-auto"
+            priority
           />
           <div
             className="absolute text-white
